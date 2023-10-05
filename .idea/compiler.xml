@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="classes-and-objects_06.10.23_01.25.03.classes-and-objects" target="11" />
+      <module name="classes-and-objects_06.10.23_01.25.03.classes-and-objects.main" target="11" />
+      <module name="classes-and-objects_06.10.23_01.25.03.classes-and-objects.test" target="11" />
+      <module name="classes-and-objects_06.10.23_01.25.42.classes-and-objects" target="11" />
+      <module name="classes-and-objects_06.10.23_01.25.42.classes-and-objects.main" target="11" />
+      <module name="classes-and-objects_06.10.23_01.25.42.classes-and-objects.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
