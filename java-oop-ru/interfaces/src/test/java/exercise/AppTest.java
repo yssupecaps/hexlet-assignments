@@ -59,14 +59,12 @@ class AppTest {
     // BEGIN
     @Test
     void testReversedSequence() {
-        CharSequence text = new ReversedSequence("abcdef");
+        CharSequence text = (CharSequence) new ReversedSequence("abcdef");
+
         assertThat(text.toString()).isEqualTo("fedcba");
-
         assertThat(text.length()).isEqualTo(6);
-
         assertThat(text.charAt(1)).isEqualTo('e');
         assertThat(text.charAt(4)).isEqualTo('b');
-
         assertThat(text.subSequence(1, 4).toString()).isEqualTo("edc");
     }
     // END
