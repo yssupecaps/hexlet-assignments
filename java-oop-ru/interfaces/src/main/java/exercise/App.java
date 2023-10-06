@@ -9,10 +9,12 @@ class App{
 
     public static List<String> buildApartmentsList(List<Home> home, int count){
         List<String> output = new ArrayList<>(count);
-        for (Home car : home) {
-            output.add(car.toString());
-        }
-        return output;
+        return home
+                .stream()
+                .limit(count)
+                .sorted(Home::compareTo)
+                .map(Home::toString)
+                .toList();
     }
 }
 // END
