@@ -1,6 +1,7 @@
 package exercise;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 // BEGIN
 class App {
@@ -10,7 +11,7 @@ class App {
                 .limit(count)
                 .sorted(Home::compareTo)
                 .map(Home::toString)
-                .toList();
+                .collect(Collectors.toList());
     }
 }
 

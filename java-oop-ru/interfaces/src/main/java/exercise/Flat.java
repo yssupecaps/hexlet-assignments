@@ -13,20 +13,19 @@ public class Flat implements Home {
         this.floor = floor;
     }
 
-    public double getFloor() {
+    public int getFloor() {
         return this.floor;
     }
 
     @Override
     public double getArea() {
-        double square = area + balconyArea;
-        return square;
+        return area + balconyArea;
     }
 
 
     @Override
     public String toString() {
-        return String.format("Квартира площадью %s метров на %n этаже", getArea(), getFloor());
+        return String.format("Квартира площадью %s метров на %s этаже", getArea(), getFloor());
     }
 
     @Override

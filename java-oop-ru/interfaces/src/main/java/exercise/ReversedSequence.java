@@ -1,13 +1,13 @@
 package exercise;
 
 // BEGIN
-class ReversedSequence {
+class ReversedSequence implements CharSequence{
 
-    private CharSequence text;
+    private String text;
 
-    public ReversedSequence(CharSequence text) {
-        text = new StringBuilder().reverse().toString();
-        this.text = text;
+    ReversedSequence(String text) {
+        StringBuilder s  = new StringBuilder(text);
+        this.text = s.reverse().toString();
     }
 
     public int length() {
