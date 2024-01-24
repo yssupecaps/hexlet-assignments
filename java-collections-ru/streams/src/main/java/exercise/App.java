@@ -11,7 +11,7 @@ class App {
     public static Long getCountOfFreeEmails(List<String> list) {
             return list.stream()
                     .map(email -> email.split("@")[1])
-                    .filter(email -> FREE_DOMAINS.contains(email))
+                    .filter(FREE_DOMAINS::contains)
                     .count();
     }
 }
